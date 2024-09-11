@@ -1,0 +1,202 @@
+*{
+  margin: 0;
+  font-family: montserrat;
+  font-weight: 600;
+  color: white;
+  font-size: 10px;
+  text-transform: uppercase;
+}
+
+html, body{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0000;
+  position: relative;
+}
+
+.main-container{
+  width: 1000px;
+  height: 600px;
+  background-image: url(./Images/Smoke-girl-wallpaper.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.5;
+  box-shadow: 0px 0px 20px rgba(255, 0, 98, 0.5);
+  border-radius: 10px;
+  cursor: pointer;
+  transition: width 0.20s, height 0.20s, background-image 0.20s, opacity 0.20s;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+  position: relative;
+  border: 3px solid #fff;
+}
+
+.main-container:hover{
+  width: 1025px;
+  height: 625px;
+  background-image: url(./Images/White-hair-wallpaper.jpg);
+  opacity: 0.8;
+}
+
+#content-top-bottom{
+  height: 90px;
+}
+
+#content{
+  height: 405px;
+}
+
+header{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 10px;
+}
+
+header > #left{
+  width: 350px;
+  height: 90px;
+  padding-left: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 10px;
+}
+
+header > #right{
+  flex: 1;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  padding-right: 50px;
+}
+
+#left > #equalizer{
+  width: 20px;
+}
+
+#right > p{
+  padding: 10px;
+  transition: all 0.20s;
+}
+
+#right > p:hover{
+  background-color: #3d0000;
+  border-radius: 20px;
+}
+
+#left > img{
+  width: 50px;
+}
+
+.login{
+  text-align: center;
+  width: 50px;
+  height: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  transition: all 0.20s;
+}
+
+.login:hover{
+  background-color: #3d0000;
+}
+
+#content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+}
+
+#content > div{
+  flex: 1;
+}
+
+#content-1{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  padding-left: 50px;
+}
+
+#content-1 > h1{
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#content-1 > p{
+  width: 400px;
+  font-weight: normal;
+}
+
+#content-1 > button{
+  background-color: #3d0000;
+  border: none;
+  border-radius: 10px;
+  padding: 10px 10px;
+  margin-top: 10px;
+  transition: all 0.20s;
+  cursor: pointer;
+}
+
+#content-1 > button:hover{
+  background-color: white;
+  color: #3d0000;
+}
+
+#content-2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#content-2 > img{
+  width: 400px;
+  opacity: 0;
+  transition: all 0.30s;
+}
+
+#content-2 > img:hover{
+  opacity: 0.8;
+}
+
+footer{
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hover-sign{
+  position: absolute;
+  width: 100px;
+  height: 40px;
+  background-color: #3d0000;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  right: 0;
+  top: 470px;
+  border: 3px solid #fff;
+  border-right: none;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+
+.hover-sign > p{
+  font-size: 20px;
+}
